@@ -35,12 +35,51 @@
         </p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="#menu">人気チーズを見る</a>
+          <a class="btn btn--ghost" href="#craft-lab">3D工程を体験</a>
           <a class="btn btn--ghost" href="#story">庄司のストーリー</a>
         </div>
         <div class="hero__stats">
           <div><strong>4.9</strong><span>レビュー評価</span></div>
           <div><strong>17K</strong><span>Instagram保存</span></div>
           <div><strong>6h</strong><span>本日の熟成時間</span></div>
+        </div>
+      </section>
+
+      <section id="craft-lab" class="section craft-lab">
+        <div class="section__head">
+          <h2>3D熟成ラボ</h2>
+          <p>工程を直感的に回して、庄司のこだわりを立体で体験。</p>
+        </div>
+
+        <div class="craft-lab__layout">
+          <div class="craft-lab__viewer">
+            <canvas id="cheese-canvas" aria-label="チーズ制作工程3Dビジュアル"></canvas>
+            <p class="viewer-hint">ドラッグで回転 / ホイールでズーム / ボタンで工程切替</p>
+          </div>
+
+          <aside class="craft-panel">
+            <h3>工程セレクト</h3>
+            <div class="step-buttons" role="group" aria-label="チーズ制作工程">
+              <button class="step-btn is-active" data-step="milk" type="button">1. ミルク選定</button>
+              <button class="step-btn" data-step="heat" type="button">2. 低温加熱</button>
+              <button class="step-btn" data-step="curd" type="button">3. 凝固・成形</button>
+              <button class="step-btn" data-step="aging" type="button">4. 熟成</button>
+            </div>
+
+            <div class="focus-card">
+              <p class="focus-card__label">庄司のこだわり</p>
+              <h4 id="step-title">ミルク選定</h4>
+              <p id="step-description">
+                牧場ごとの脂肪分と香りを比較し、その日の仕込みに最適なミルクを厳選。
+              </p>
+            </div>
+
+            <div class="metrics">
+              <div class="metric"><span>温度精度</span><div><i id="metric-temp"></i></div></div>
+              <div class="metric"><span>香り密度</span><div><i id="metric-aroma"></i></div></div>
+              <div class="metric"><span>旨味ポテンシャル</span><div><i id="metric-umami"></i></div></div>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -131,8 +170,11 @@
 
     <nav class="mobile-nav" aria-label="モバイル固定メニュー">
       <a href="#menu">商品</a>
+      <a href="#craft-lab">3D</a>
       <a href="#story">こだわり</a>
       <a href="#reserve" class="mobile-nav__cta">予約</a>
     </nav>
+
+    <script type="module" src="app.js"></script>
   </body>
 </html>
