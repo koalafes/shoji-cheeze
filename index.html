@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>庄司のチーズ | 公式サイトデモ</title>
+    <meta
+      name="description"
+      content="30代のチーズ職人・庄司がつくる、こだわりの熟成チーズ。スマホ最適化した公式サイトのデモです。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand__icon">🧀</span>
+        <span>庄司のチーズ</span>
+      </a>
+      <a class="pill" href="#reserve">試食予約</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__badge">#SNSで話題 #クラフトチーズ</div>
+        <h1>一口で伝わる、<br />庄司のこだわり。</h1>
+        <p>
+          30代のチーズ職人・庄司が、北海道ミルクを低温熟成。
+          風味のピークだけを届ける、数量限定のクラフトチーズです。
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#menu">人気チーズを見る</a>
+          <a class="btn btn--ghost" href="#story">庄司のストーリー</a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>4.9</strong><span>レビュー評価</span></div>
+          <div><strong>17K</strong><span>Instagram保存</span></div>
+          <div><strong>6h</strong><span>本日の熟成時間</span></div>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="section__head">
+          <h2>今週のバズチーズ</h2>
+          <p>短尺動画で人気のフレーバーを、オンラインでも。</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="card__tag">人気No.1</span>
+            <h3>熟成ブリュレチーズ</h3>
+            <p>表面を香ばしく炙り、内側はとろける食感。ワインと相性抜群。</p>
+            <div class="price">¥1,280</div>
+          </article>
+          <article class="card">
+            <span class="card__tag">限定</span>
+            <h3>柚子ペッパーゴーダ</h3>
+            <p>柚子皮の香りと黒胡椒の余韻。SNSで「お酒泥棒」と話題。</p>
+            <div class="price">¥1,450</div>
+          </article>
+          <article class="card">
+            <span class="card__tag">新作</span>
+            <h3>蜂蜜ブルーチーズ</h3>
+            <p>青カビのコクに国産はちみつを重ねた、甘じょっぱい逸品。</p>
+            <div class="price">¥1,620</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="story" class="section story">
+        <div>
+          <h2>庄司のクラフト哲学</h2>
+          <p>
+            「素材のピークを、1日でも長く。」
+            庄司は毎朝5時に仕込み、温度・湿度・塩分をミリ単位で調整。大量生産せず、
+            “食べた瞬間に記憶に残る濃さ”だけを追求しています。
+          </p>
+        </div>
+        <ul>
+          <li>北海道直送ミルクのみ使用</li>
+          <li>最小ロットの手作業熟成</li>
+          <li>毎週フレーバーを試作・更新</li>
+        </ul>
+      </section>
+
+      <section class="section social-proof">
+        <div class="section__head">
+          <h2>お客さまの声</h2>
+          <p>リアルな感想が、次のチーズを作るヒントです。</p>
+        </div>
+        <div class="reviews">
+          <blockquote>
+            「動画で見て即購入。想像より濃厚で、秒でなくなりました！」
+            <cite>@cheese_love_tokyo</cite>
+          </blockquote>
+          <blockquote>
+            「チーズ苦手だった夫がハマった。庄司さんの説明も丁寧で安心。」
+            <cite>@umafoodlog</cite>
+          </blockquote>
+          <blockquote>
+            「ギフトで大正解。箱を開けた瞬間の香りがもう違う。」
+            <cite>@miki_gourmet</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="reserve" class="section reserve">
+        <h2>試食会を予約する</h2>
+        <p>週末限定・1日12席。スマホから30秒で予約完了。</p>
+        <form class="reserve__form">
+          <label>
+            お名前
+            <input type="text" placeholder="庄司 太郎" />
+          </label>
+          <label>
+            メール
+            <input type="email" placeholder="sample@example.com" />
+          </label>
+          <label>
+            希望日
+            <input type="date" />
+          </label>
+          <button type="button" class="btn btn--primary">予約リクエストを送信</button>
+        </form>
+      </section>
+    </main>
+
+    <nav class="mobile-nav" aria-label="モバイル固定メニュー">
+      <a href="#menu">商品</a>
+      <a href="#story">こだわり</a>
+      <a href="#reserve" class="mobile-nav__cta">予約</a>
+    </nav>
+  </body>
+</html>
