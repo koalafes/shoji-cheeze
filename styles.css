@@ -401,7 +401,9 @@ input {
 }
 
 .mobile-nav a {
-  font-size: 0.88rem;
+  flex: 1;
+  text-align: center;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 
@@ -410,7 +412,8 @@ input {
   color: #2a1d03 !important;
   font-weight: 800;
   border-radius: 999px;
-  padding: 0.48rem 1rem;
+  display: inline-block;
+  padding: 0.48rem 0.65rem;
 }
 
 @media (min-width: 768px) {
